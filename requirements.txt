@@ -1,0 +1,12 @@
+torch==2.5.1
+mrcfile==1.5.4
+numba==0.61.2
+einops==0.8.1
+timm==1.0.24
+numexpr==2.10.0
+numpy==1.26.4
+scipy==1.16.0
+tqdm==4.67.1
+
+--only-binary=Pillow
+pillow>=10.1,<13
