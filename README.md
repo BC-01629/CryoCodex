@@ -2,18 +2,11 @@
 
 # CryoCodex
 
-<p>
-  <img src="https://img.shields.io/badge/CryoCodex-v1.0.0-F59E0B?style=flat-square" />
-  <img src="https://img.shields.io/badge/Linux-tested-555555?style=flat-square&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-2.5.1-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/CUDA-12.4-76B900?style=flat-square&logo=nvidia&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-MIT-6B7280?style=flat-square" />
-</p>
+<p>Version 1.0.0 · Python 3.11 · PyTorch 2.5.1 · CUDA 12.4</p>
 
 ### Cryo-EM map enhancement with local quality estimation and molecular mask prediction
 
-<sub>𝑩𝒊𝒏 𝑪𝒉𝒆𝒏𝒈 · 𝒀𝒂𝒏𝒈 𝑳𝒂𝒃</sub>
+<sub>Bin Cheng · Yang Lab</sub>
 
 <br>
 
@@ -31,7 +24,7 @@
 
 ---
 
-## 📦 Installation
+## Installation
 
 <details>
 <summary><b>Show installation instructions</b></summary>
@@ -89,7 +82,7 @@ Check the installation with:
 
 ---
 
-## ⚡ Usage
+## Usage
 
 ### Basic command
 
@@ -136,7 +129,7 @@ For command-line help:
 
 ---
 
-## 🚀 Inference Modes
+## Inference Modes
 
 CryoCodex provides two inference modes, selected with `--normal True|False`.
 
@@ -145,7 +138,7 @@ CryoCodex provides two inference modes, selected with `--normal True|False`.
 
 <td width="50%" valign="top">
 
-<h3 align="center">⚡ Fast mode</h3>
+<h3 align="center">Fast mode</h3>
 
 <p align="center">
   <sub><b>Default · Cropped inference</b></sub>
@@ -234,7 +227,7 @@ The cropped-away background is filled back in with zeros so that the outputs spa
 
 ---
 
-## 📤 Outputs
+## Outputs
 
 By default, CryoCodex saves the output maps on a **1.0 Å grid** in the directory specified by `-o`.
 
@@ -268,28 +261,7 @@ color sample #1 map #2 palette "#1B3A5F:#245A8D:#2F80C0:#6BAED6:#BFD9EA:#7F7F7F:
 
 The palette spans the score range used for the surface coloring, from **lower local quality** to **higher local quality**.
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td bgcolor="#1B3A5F" height="18"></td>
-<td bgcolor="#245A8D"></td>
-<td bgcolor="#2F80C0"></td>
-<td bgcolor="#6BAED6"></td>
-<td bgcolor="#BFD9EA"></td>
-<td bgcolor="#7F7F7F"></td>
-<td bgcolor="#C9B458"></td>
-<td bgcolor="#FEE191"></td>
-<td bgcolor="#F9B233"></td>
-<td bgcolor="#FC8E59"></td>
-<td bgcolor="#F04438"></td>
-<td bgcolor="#DC3223"></td>
-<td bgcolor="#8B0000"></td>
-</tr>
-<tr>
-<td colspan="6" align="left"><sub><b>Low quality</b></sub></td>
-<td></td>
-<td colspan="6" align="right"><sub><b>High quality</b></sub></td>
-</tr>
-</table>
+![Local quality color scale from low (blue) to high (dark red)](./local-quality-colorbar.png)
 
 For the enhanced map, use `cryocodex_out_score.mrc` in the same way:
 
