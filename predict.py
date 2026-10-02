@@ -143,7 +143,6 @@ def score_inference(in_map_path, output_path, model_path, batch_size, out_name, 
             binary_mask = (binary_mask >= 0.5).astype(np.float32)
             print(f"# Output grid is now {pred.shape} at {voxel_size[0]} Angstrom")
 
-    # Clamp after resampling as interpolation can introduce negative scores.
     np.maximum(score_o, 0, out=score_o)
     np.maximum(score_i, 0, out=score_i)
 
