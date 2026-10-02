@@ -256,7 +256,7 @@ For example, open the deposited map and its input quality map:
 Then color the surface of `#1` according to the score values in `#2`:
 
 ```bash
-color sample #1 map #2 palette "#1B3A5F:#245A8D:#2F80C0:#6BAED6:#BFD9EA:#7F7F7F:#C9B458:#FEE191:#F9B233:#FC8E59:#F04438:#DC3223:#8B0000" key true
+color sample #1 map #2 palette "#1B3A5F:#245A8D:#2F80C0:#6BAED6:#BFD9EA:#7F7F7F:#C9B458:#FEE191:#F9B233:#FC8E59:#F04438:#DC3223:#8B0000" key true ; key fontSize 11 size 0.65,0.02 pos 0.18,0.06 colorTreatment distinct
 ```
 
 The palette spans the score range used for the surface coloring, from **lower local quality** to **higher local quality**.
@@ -266,15 +266,13 @@ The palette spans the score range used for the surface coloring, from **lower lo
 For the enhanced map, use `cryocodex_out_score.mrc` in the same way:
 
 ```text
-#1   cryocodex.mrc
-#2   cryocodex_out_score.mrc
+#3   cryocodex.mrc
+#4   cryocodex_out_score.mrc
 ```
 
 ```bash
-color sample #1 map #2 palette "#1B3A5F:#245A8D:#2F80C0:#6BAED6:#BFD9EA:#7F7F7F:#C9B458:#FEE191:#F9B233:#FC8E59:#F04438:#DC3223:#8B0000" key true
+color sample #3 map #4 palette "#1B3A5F:#245A8D:#2F80C0:#6BAED6:#BFD9EA:#7F7F7F:#C9B458:#FEE191:#F9B233:#FC8E59:#F04438:#DC3223:#8B0000" key true ; key fontSize 11 size 0.65,0.02 pos 0.18,0.06 colorTreatment distinct
 ```
-
-The `key true` option displays the corresponding color key directly in ChimeraX.
 
 ---
 
