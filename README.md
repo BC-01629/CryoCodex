@@ -277,7 +277,17 @@ color sample #3 map #4 palette "#1B3A5F:#245A8D:#2F80C0:#6BAED6:#BFD9EA:#7F7F7F:
 ---
 
 ## Citation
+If you use PathDiffusion in your research or work, please cite our publication: 
 
+```
+@article{Cheng2026CryoCodex,
+  title={CryoCodex: learning discrete structural representations for cryo-EM map post-processing},
+  author={Cheng, Bin and Su, Baoquan and Yang, Jianyi},
+  journal={bioRxiv},
+  year={2026},
+  doi={10.64898/2026.09.30.755675}
+}
+```
 ---
 
 ## License
